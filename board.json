@@ -458,16 +458,6 @@
       "published_at": null
     },
     {
-      "id": "21feb9f204e3",
-      "status": "RENDERED",
-      "account": "tech",
-      "category": "science",
-      "hook": "바이러스에 맞서는 우리 몸의 방식, 이게 유일한 방법일까요?",
-      "thumb": null,
-      "scheduled_at": null,
-      "published_at": null
-    },
-    {
       "id": "97b0a7e3e4d1",
       "status": "RENDERED",
       "account": "tech",
@@ -508,6 +498,16 @@
       "published_at": null
     },
     {
+      "id": "21feb9f204e3",
+      "status": "PUBLISHED",
+      "account": "tech",
+      "category": "science",
+      "hook": "바이러스에 맞서는 우리 몸의 방식, 이게 유일한 방법일까요?",
+      "thumb": "https://raw.githubusercontent.com/CASHCOW95/insta-cards/main/cards/21feb9f204e3/01.jpg",
+      "scheduled_at": "2026-07-08 00:46",
+      "published_at": "2026-07-08 00:48:30"
+    },
+    {
       "id": "354c5119d6a3",
       "status": "PUBLISHED",
       "account": "tech",
@@ -521,14 +521,14 @@
   "summary": {
     "by_status": {
       "INBOX": 64,
-      "PUBLISHED": 1,
+      "PUBLISHED": 2,
       "REJECTED": 1,
-      "RENDERED": 6
+      "RENDERED": 5
     },
     "by_account": {
       "science": 1,
       "tech": 71
     },
-    "published_today": 0
+    "published_today": 1
   }
 }
