@@ -1,0 +1,534 @@
+{
+  "columns": [
+    {
+      "key": "INBOX",
+      "label": "수집"
+    },
+    {
+      "key": "ANALYZED",
+      "label": "분석완료"
+    },
+    {
+      "key": "RENDERED",
+      "label": "카드생성"
+    },
+    {
+      "key": "PENDING_REVIEW",
+      "label": "검수대기"
+    },
+    {
+      "key": "AUTO_APPROVED",
+      "label": "승인"
+    },
+    {
+      "key": "SCHEDULED",
+      "label": "예약"
+    },
+    {
+      "key": "PUBLISHED",
+      "label": "발행됨"
+    }
+  ],
+  "accounts": {
+    "tech": {
+      "name": "fast_newsis",
+      "accent": "#ffd83d",
+      "active": true
+    },
+    "science": {
+      "name": "science_kr",
+      "accent": "#c9b8ff",
+      "active": true
+    },
+    "life": {
+      "name": "daily_tip_kr",
+      "accent": "#ff9d4d",
+      "active": false
+    }
+  },
+  "cards": [
+    {
+      "id": "be870a2e0aa9",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "f3ed85ef77d6",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "78edecf5d3b4",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "950fe3f5e820",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "6f348b774ebf",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "e54d9a016b2f",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "a2545f8340e9",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "4480a89066b9",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "a00c6cad7f23",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "6b838fa78137",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "abd7254acf82",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "756d17bd7b9d",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "9f31f9b37493",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "a115f61afd66",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "c5e828ac35fa",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "41ce4124e2a8",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "6c6ca1e0e9a9",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "392d46c49073",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "7c302b7ceb8d",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "8b1352daf62e",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "0df4e14acfd4",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "b3165953f36d",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "681a45fff7bd",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "0633685b0e1d",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "1f93356b9140",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "687f58d01dbd",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "95c7570a25d1",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "894c4a7fb9db",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "2398b7552ccc",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "216185d7dc14",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "tech",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "90f7e45912ee",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "science",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "95d091d34994",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "lifehack",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "7232157a1a08",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "lifehack",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "7f7dda53d9bd",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "lifehack",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "8cf57d33fbd4",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "lifehack",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "5e165be06522",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "lifehack",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "ce1df7fcbf4a",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "lifehack",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "d03bf345fa63",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "lifehack",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "8e567ab21f3d",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "lifehack",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "46eb580c89a5",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "lifehack",
+      "hook": "",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "2b610718377d",
+      "status": "RENDERED",
+      "account": "science",
+      "category": "science",
+      "hook": "전기 낭비 0%, 발열 0%! 꿈의 기술이 코앞에?",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "21feb9f204e3",
+      "status": "RENDERED",
+      "account": "tech",
+      "category": "science",
+      "hook": "바이러스에 맞서는 우리 몸의 방식, 이게 유일한 방법일까요?",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "97b0a7e3e4d1",
+      "status": "RENDERED",
+      "account": "tech",
+      "category": "science",
+      "hook": "아직 완성되지 않은 나 같다고요? 우주에도 수백만 년째 '성장 중'인 별들이 있대요!",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "2e77663d4ce4",
+      "status": "RENDERED",
+      "account": "tech",
+      "category": "science",
+      "hook": "50만 개의 별이 한 점에? 허블이 포착한 우주의 '히든 플레이스'!",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "cc5934f6d4b4",
+      "status": "RENDERED",
+      "account": "tech",
+      "category": "science",
+      "hook": "NASA가 몰래 공개한 우주 초고화질 사진 4장, 대체 뭘까?",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "76833598b163",
+      "status": "RENDERED",
+      "account": "tech",
+      "category": "science",
+      "hook": "화려했던 불꽃놀이, 그 아름다운 순간 뒤에 이런 '숨겨진 대가'가 있었다면?",
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null
+    },
+    {
+      "id": "354c5119d6a3",
+      "status": "PUBLISHED",
+      "account": "tech",
+      "category": "science",
+      "hook": "지구와 생명의 탄생 비밀, 나사가 허블 망원경으로 포착했습니다.",
+      "thumb": "https://raw.githubusercontent.com/CASHCOW95/insta-cards/main/cards/354c5119d6a3/01.jpg",
+      "scheduled_at": "2026-07-07 15:00",
+      "published_at": "2026-07-07 23:37:08"
+    }
+  ],
+  "summary": {
+    "by_status": {
+      "INBOX": 64,
+      "PUBLISHED": 1,
+      "REJECTED": 1,
+      "RENDERED": 6
+    },
+    "by_account": {
+      "science": 1,
+      "tech": 71
+    },
+    "published_today": 0
+  }
+}
