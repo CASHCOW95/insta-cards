@@ -38,7 +38,7 @@
     "science": {
       "name": "science_kr",
       "accent": "#c9b8ff",
-      "active": true
+      "active": false
     },
     "life": {
       "name": "daily_tip_kr",
