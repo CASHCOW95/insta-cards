@@ -1,12 +1,34 @@
 {
+  "schema_version": 2,
+  "generated_at": "2026-07-12T01:26:40+09:00",
+  "operational": {
+    "mode": "inactive",
+    "label": "자동 발행 OFF",
+    "active_accounts": [],
+    "inactive_account_count": 3,
+    "message": "활성 계정 없음"
+  },
+  "activity": {
+    "last_event_at": "2026-07-09 14:25:07",
+    "last_event": "STATUS:ANALYZED",
+    "next_scheduled_at": null
+  },
   "columns": [
     {
       "key": "INBOX",
-      "label": "수집"
+      "label": "수집(원문)"
+    },
+    {
+      "key": "QUEUED",
+      "label": "제작대기"
     },
     {
       "key": "ANALYZED",
       "label": "분석완료"
+    },
+    {
+      "key": "NARRATED",
+      "label": "나레이션"
     },
     {
       "key": "RENDERED",
@@ -27,13 +49,86 @@
     {
       "key": "PUBLISHED",
       "label": "발행됨"
+    },
+    {
+      "key": "TRACKED",
+      "label": "성과수집"
+    },
+    {
+      "key": "AMPLIFY",
+      "label": "증폭대기"
+    },
+    {
+      "key": "FAILED",
+      "label": "실패"
+    },
+    {
+      "key": "REJECTED",
+      "label": "거절"
+    },
+    {
+      "key": "EXPIRED",
+      "label": "만료"
     }
+  ],
+  "lanes": [
+    {
+      "key": "intake",
+      "label": "수집",
+      "statuses": [
+        "INBOX"
+      ],
+      "tone": "#94a3b8"
+    },
+    {
+      "key": "production",
+      "label": "제작",
+      "statuses": [
+        "QUEUED",
+        "ANALYZED",
+        "NARRATED",
+        "RENDERED"
+      ],
+      "tone": "#a78bfa"
+    },
+    {
+      "key": "review",
+      "label": "검수",
+      "statuses": [
+        "PENDING_REVIEW",
+        "AUTO_APPROVED"
+      ],
+      "tone": "#fbbf24"
+    },
+    {
+      "key": "schedule",
+      "label": "예약",
+      "statuses": [
+        "SCHEDULED"
+      ],
+      "tone": "#2dd4bf"
+    },
+    {
+      "key": "published",
+      "label": "발행 · 성과",
+      "statuses": [
+        "PUBLISHED",
+        "TRACKED",
+        "AMPLIFY"
+      ],
+      "tone": "#f472b6"
+    }
+  ],
+  "exception_statuses": [
+    "FAILED",
+    "REJECTED",
+    "EXPIRED"
   ],
   "accounts": {
     "tech": {
       "name": "fast_newsis",
       "accent": "#ffd83d",
-      "active": true
+      "active": false
     },
     "science": {
       "name": "science_kr",
@@ -48,404 +143,532 @@
   },
   "cards": [
     {
-      "id": "be870a2e0aa9",
-      "status": "INBOX",
-      "account": "tech",
-      "category": "tech",
-      "hook": "",
-      "thumb": null,
-      "scheduled_at": null,
-      "published_at": null
-    },
-    {
       "id": "f3ed85ef77d6",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "Anker&#8217;s noise-blocking earbuds for sleeping are nearly half off",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:53"
     },
     {
       "id": "78edecf5d3b4",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "iRobot’s newest floor cleaner isn’t a robot",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:53"
     },
     {
       "id": "950fe3f5e820",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "Microsoft fixes storage-hogging Windows 11 folder",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:53"
     },
     {
       "id": "6f348b774ebf",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "Solos debuts an even lighter version of its camera-less smart glasses",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:53"
     },
     {
       "id": "e54d9a016b2f",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "Google Search lets creators know more about their reach",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:53"
     },
     {
       "id": "a2545f8340e9",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "iFixit has a new toolkit for fixing appliances, building furniture, and household repairs",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:53"
     },
     {
       "id": "4480a89066b9",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "Marshall upgrades the bass and repairability of two wireless speakers",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:53"
     },
     {
       "id": "a00c6cad7f23",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "Xbox’s bold plan for the future sounds nearly impossible",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:53"
     },
     {
       "id": "6b838fa78137",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "Are you ready for what it takes to stop ghost guns?",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:53"
     },
     {
       "id": "abd7254acf82",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "X adds a video editor to encourage creators to post original content, not stolen reposts",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:53"
     },
     {
       "id": "756d17bd7b9d",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "Chemistry Ventures is raising $500M for its second fund",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:53"
     },
     {
       "id": "9f31f9b37493",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "AI law startup Norm raises $120M, hits unicorn valuation",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:53"
     },
     {
       "id": "a115f61afd66",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "This startup pits dealerships against each other to bid on your used car",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:53"
     },
     {
       "id": "c5e828ac35fa",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "Hacktivists call out Trump by hacking and defacing US Army websites",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:53"
     },
     {
       "id": "41ce4124e2a8",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "Savi’s app aims to protect consumers from realistic AI scams like kidnappers demanding ran",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:53"
     },
     {
       "id": "6c6ca1e0e9a9",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "The first American autonomous ground vehicles are fighting in Ukraine",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:53"
     },
     {
       "id": "392d46c49073",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "Netflix invented binge-watching. Now it may have outgrown it.",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:53"
     },
     {
       "id": "7c302b7ceb8d",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "The ‘first’ AI-run ransomware attack still needed a human",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:53"
     },
     {
       "id": "8b1352daf62e",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "US investors will soon get access to SK Hynix, another memory maker riding the AI boom",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:53"
     },
     {
       "id": "0df4e14acfd4",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "Chat Control passed first round in EU Parliament",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:52"
     },
     {
       "id": "b3165953f36d",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "The Revenge of the Philosophy Majors",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:52"
     },
     {
       "id": "681a45fff7bd",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "Dua Lipa opens library for banned and censored books in Portugal",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:52"
     },
     {
       "id": "0633685b0e1d",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "98% Isn't Much",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:52"
     },
     {
       "id": "1f93356b9140",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "A better way to tie your gym shorts. (Or any drawstring) [video]",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:52"
     },
     {
       "id": "687f58d01dbd",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "Show HN: PostgreSQL performance and cost across 23 EC2 instance types",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:52"
     },
     {
       "id": "95c7570a25d1",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "StreetComplete: Fixing OpenStreetMap, one tiny quest at a time",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:52"
     },
     {
       "id": "894c4a7fb9db",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "Europe's company websites are mostly served by US vendors",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:52"
     },
     {
       "id": "2398b7552ccc",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "9 Mothers (YC P26) Is Hiring in Austin, TX",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:52"
     },
     {
       "id": "216185d7dc14",
       "status": "INBOX",
       "account": "tech",
       "category": "tech",
-      "hook": "",
+      "hook": "Top researchers leave USA for the Netherlands (in Dutch)",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:29:52"
     },
     {
       "id": "90f7e45912ee",
       "status": "INBOX",
       "account": "tech",
       "category": "science",
-      "hook": "",
+      "hook": "Scientists may have finally found how Alzheimer's spreads through the brain",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:01:11"
     },
     {
       "id": "95d091d34994",
       "status": "INBOX",
       "account": "tech",
       "category": "lifehack",
-      "hook": "",
+      "hook": "Lifehacker Deals Live Blog: The Best Tech Sales, All in One Place",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-07 14:11:31"
     },
     {
       "id": "7232157a1a08",
       "status": "INBOX",
       "account": "tech",
       "category": "lifehack",
-      "hook": "",
+      "hook": "Which Is the Better Watch Display: MIP vs. AMOLED",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-07 14:11:31"
     },
     {
       "id": "7f7dda53d9bd",
       "status": "INBOX",
       "account": "tech",
       "category": "lifehack",
-      "hook": "",
+      "hook": "Amazon Prime Members Can Get Two Free E-Books in July",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-07 14:11:31"
     },
     {
       "id": "8cf57d33fbd4",
       "status": "INBOX",
       "account": "tech",
       "category": "lifehack",
-      "hook": "",
+      "hook": "Five Hacks Every Garmin Forerunner 970 User Should Know",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-07 14:11:31"
     },
     {
       "id": "5e165be06522",
       "status": "INBOX",
       "account": "tech",
       "category": "lifehack",
-      "hook": "",
+      "hook": "TCL's More Affordable Take on 'The Frame' TV Is Nearly $600 Off Right Now",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-07 14:11:31"
     },
     {
       "id": "ce1df7fcbf4a",
       "status": "INBOX",
       "account": "tech",
       "category": "lifehack",
-      "hook": "",
+      "hook": "This Three-in-One Anker Charger Is $50 Off Right Now",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-07 14:11:31"
     },
     {
       "id": "d03bf345fa63",
       "status": "INBOX",
       "account": "tech",
       "category": "lifehack",
-      "hook": "",
+      "hook": "This Midrange Samsung Galaxy Phone Just Hit Its Lowest Price Ever",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-07 14:11:31"
     },
     {
       "id": "8e567ab21f3d",
       "status": "INBOX",
       "account": "tech",
       "category": "lifehack",
-      "hook": "",
+      "hook": "The Best Private Messaging App Isn’t WhatsApp or Signal, It’s Delta Chat",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-07 14:11:31"
     },
     {
       "id": "46eb580c89a5",
       "status": "INBOX",
       "account": "tech",
       "category": "lifehack",
-      "hook": "",
+      "hook": "I Compared Siri AI to Gemini on iPhone and There's a Clear Winner",
+      "has_hook": false,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-07 14:11:31"
+    },
+    {
+      "id": "981c5dd1210e",
+      "status": "INBOX",
+      "account": "tech",
+      "category": "lifehack",
+      "hook": "10 Shows Like 'Cape Fear' You Should Watch Next",
+      "has_hook": false,
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null,
+      "updated_at": "2026-07-07 14:11:31"
+    },
+    {
+      "id": "384ff0ace103",
+      "status": "ANALYZED",
+      "account": "tech",
+      "category": "general",
+      "hook": "출근길 10분, 뇌를 바꾸는 사람들의 공통 습관",
+      "has_hook": true,
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null,
+      "updated_at": "2026-07-09 14:25:07"
+    },
+    {
+      "id": "a051f3a3150f",
+      "status": "ANALYZED",
+      "account": "tech",
+      "category": "general",
+      "hook": "출근길 10분, 뇌를 바꾸는 사람들의 공통 습관",
+      "has_hook": true,
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null,
+      "updated_at": "2026-07-09 14:24:50"
+    },
+    {
+      "id": "22007212ab35",
+      "status": "ANALYZED",
+      "account": "tech",
+      "category": "general",
+      "hook": "출근길 10분, 뇌를 바꾸는 사람들의 공통 습관",
+      "has_hook": true,
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null,
+      "updated_at": "2026-07-09 14:00:38"
+    },
+    {
+      "id": "be870a2e0aa9",
+      "status": "RENDERED",
+      "account": "tech",
+      "category": "tech",
+      "hook": "디스코드에서 ‘이런 이미지’ 올리면 계정 영구 정지 당할 수도? 😱",
+      "has_hook": true,
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null,
+      "updated_at": "2026-07-08 01:19:05"
     },
     {
       "id": "2b610718377d",
@@ -453,9 +676,11 @@
       "account": "science",
       "category": "science",
       "hook": "전기 낭비 0%, 발열 0%! 꿈의 기술이 코앞에?",
+      "has_hook": true,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-08 00:33:23"
     },
     {
       "id": "97b0a7e3e4d1",
@@ -463,9 +688,11 @@
       "account": "tech",
       "category": "science",
       "hook": "아직 완성되지 않은 나 같다고요? 우주에도 수백만 년째 '성장 중'인 별들이 있대요!",
+      "has_hook": true,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-07 14:32:43"
     },
     {
       "id": "2e77663d4ce4",
@@ -473,9 +700,11 @@
       "account": "tech",
       "category": "science",
       "hook": "50만 개의 별이 한 점에? 허블이 포착한 우주의 '히든 플레이스'!",
+      "has_hook": true,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-07 14:30:57"
     },
     {
       "id": "cc5934f6d4b4",
@@ -483,9 +712,11 @@
       "account": "tech",
       "category": "science",
       "hook": "NASA가 몰래 공개한 우주 초고화질 사진 4장, 대체 뭘까?",
+      "has_hook": true,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-07 14:30:57"
     },
     {
       "id": "76833598b163",
@@ -493,9 +724,11 @@
       "account": "tech",
       "category": "science",
       "hook": "화려했던 불꽃놀이, 그 아름다운 순간 뒤에 이런 '숨겨진 대가'가 있었다면?",
+      "has_hook": true,
       "thumb": null,
       "scheduled_at": null,
-      "published_at": null
+      "published_at": null,
+      "updated_at": "2026-07-07 14:30:57"
     },
     {
       "id": "21feb9f204e3",
@@ -503,9 +736,11 @@
       "account": "tech",
       "category": "science",
       "hook": "바이러스에 맞서는 우리 몸의 방식, 이게 유일한 방법일까요?",
+      "has_hook": true,
       "thumb": "https://raw.githubusercontent.com/CASHCOW95/insta-cards/main/cards/21feb9f204e3/01.jpg",
       "scheduled_at": "2026-07-08 00:46",
-      "published_at": "2026-07-08 00:48:30"
+      "published_at": "2026-07-08 00:48:30",
+      "updated_at": "2026-07-08 00:48:30"
     },
     {
       "id": "354c5119d6a3",
@@ -513,22 +748,50 @@
       "account": "tech",
       "category": "science",
       "hook": "지구와 생명의 탄생 비밀, 나사가 허블 망원경으로 포착했습니다.",
+      "has_hook": true,
       "thumb": "https://raw.githubusercontent.com/CASHCOW95/insta-cards/main/cards/354c5119d6a3/01.jpg",
       "scheduled_at": "2026-07-07 15:00",
-      "published_at": "2026-07-07 23:37:08"
+      "published_at": "2026-07-07 23:37:08",
+      "updated_at": "2026-07-07 23:37:08"
+    },
+    {
+      "id": "44057422d82f",
+      "status": "REJECTED",
+      "account": "tech",
+      "category": "knowledge",
+      "hook": "아침에 책 10분 읽는 거, 그냥 시간 낭비일까요?",
+      "has_hook": true,
+      "thumb": null,
+      "scheduled_at": null,
+      "published_at": null,
+      "updated_at": "2026-07-07 14:43:04"
     }
   ],
   "summary": {
     "by_status": {
-      "INBOX": 64,
+      "ANALYZED": 3,
+      "INBOX": 63,
       "PUBLISHED": 2,
       "REJECTED": 1,
-      "RENDERED": 5
+      "RENDERED": 6
     },
     "by_account": {
       "science": 1,
-      "tech": 71
+      "tech": 74
     },
-    "published_today": 1
+    "by_account_status": {
+      "science": {
+        "RENDERED": 1
+      },
+      "tech": {
+        "ANALYZED": 3,
+        "INBOX": 63,
+        "PUBLISHED": 2,
+        "REJECTED": 1,
+        "RENDERED": 5
+      }
+    },
+    "published_today": 0,
+    "card_limit_per_status": 40
   }
 }
